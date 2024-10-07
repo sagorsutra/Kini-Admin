@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Product Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic"
+        />
+
+
+    <!-- Product Name -->
+    <EditText
+        android:id="@+id/pName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        style="@style/editText"/>
+
+    <!-- Product Price -->
+    <EditText
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Price"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        style="@style/editText"/>
+
+    <!-- Product Category -->
+    <EditText
+        android:id="@+id/productCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Category"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        style="@style/editText"/>
+
+    <!-- Image Upload Button -->
+    <Button
+        android:id="@+id/selectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Display selected image preview -->
+    <ImageView
+        android:id="@+id/productImagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+
+    <!-- Upload Button -->
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Product"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>

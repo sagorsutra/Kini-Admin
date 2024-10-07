@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "592713886091",
+    "firebase_url": "https://kini-972f1-default-rtdb.firebaseio.com",
+    "project_id": "kini-972f1",
+    "storage_bucket": "kini-972f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592713886091:android:ef34f101ab60bf7fb5678e",
+        "android_client_info": {
+          "package_name": "com.smartherd.kini"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcy-zDExP2TREHOBSEnt7j5LD-znnq-RU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592713886091:android:586ddcd73434136cb5678e",
+        "android_client_info": {
+          "package_name": "com.smartherd.kiniadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcy-zDExP2TREHOBSEnt7j5LD-znnq-RU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
