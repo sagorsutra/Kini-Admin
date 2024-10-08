@@ -40,14 +40,67 @@
         style="@style/editText"/>
 
     <!-- Product Category -->
-    <EditText
-        android:id="@+id/productCategory"
+<!--    <EditText-->
+<!--        android:id="@+id/productCategory"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Product Category"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        style="@style/editText"/>-->
+    <Spinner
+        android:id="@+id/mainCategorySpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Product Category"
         android:padding="10dp"
         android:layout_marginBottom="10dp"
-        style="@style/editText"/>
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dropdown" />
+
+    <!-- Subcategory Spinner (Hidden Initially) -->
+    <Spinner
+        android:id="@+id/subCategorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/spinner_background" />
+
+    <!-- Item Category Spinner (Hidden Initially) -->
+    <Spinner
+        android:id="@+id/itemCategorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:background="@drawable/spinner_background" />
+    <RadioGroup
+        android:id="@+id/radioGroupCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioSpecialProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special Product" />
+
+        <RadioButton
+            android:id="@+id/radioBestDeals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Deal" />
+
+        <RadioButton
+            android:id="@+id/radioBestProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Product" />
+    </RadioGroup>
+
 
     <!-- Image Upload Button -->
     <Button
